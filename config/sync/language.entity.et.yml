@@ -1,0 +1,16 @@
+uuid: f839d8d0-2619-460e-99d7-5edd501f8b39
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: ypmXU7MG3HjhXoqf63y4-03jaERYlLoqVWDbXA3Zx8U
+id: et
+label: Estonian
+direction: ltr
+weight: 5
+locked: false

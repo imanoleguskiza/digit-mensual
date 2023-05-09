@@ -1,0 +1,49 @@
+uuid: 4dea0c4f-4338-40f6-a27c-4833bfb3d6fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_facts_figures.field_oe_link
+    - field.field.paragraph.oe_facts_figures.field_oe_paragraphs
+    - field.field.paragraph.oe_facts_figures.field_oe_title
+    - paragraphs.paragraphs_type.oe_facts_figures
+  module:
+    - entity_reference_revisions
+    - link
+_core:
+  default_config_hash: vI2Yc5VkBFs1Ln6GW9qgzBUzR93cGeqDLIhl_Szjbjw
+id: paragraph.oe_facts_figures.default
+targetEntityType: paragraph
+bundle: oe_facts_figures
+mode: default
+content:
+  field_oe_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_oe_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_oe_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

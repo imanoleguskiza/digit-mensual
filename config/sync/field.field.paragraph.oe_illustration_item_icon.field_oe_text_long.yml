@@ -1,0 +1,23 @@
+uuid: e3194412-753f-447c-bc8f-4fce5b044569
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_text_long
+    - paragraphs.paragraphs_type.oe_illustration_item_icon
+  module:
+    - text
+_core:
+  default_config_hash: Pn0wpOCh2r7mke7LRX4DXYtNOiF3q4pX0Yb0jgdMnZs
+id: paragraph.oe_illustration_item_icon.field_oe_text_long
+field_name: field_oe_text_long
+entity_type: paragraph
+bundle: oe_illustration_item_icon
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

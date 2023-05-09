@@ -1,0 +1,44 @@
+uuid: f04e7a50-d77b-4959-a782-22930da57bf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_iframe_media.field_oe_iframe_media_full_width
+    - field.field.paragraph.oe_iframe_media.field_oe_media
+    - field.field.paragraph.oe_iframe_media.field_oe_title
+    - paragraphs.paragraphs_type.oe_iframe_media
+_core:
+  default_config_hash: UfmcI1dxQ3HGNL5-0aEK-K1jhmK7pak76fqcmLt0pCg
+id: paragraph.oe_iframe_media.default
+targetEntityType: paragraph
+bundle: oe_iframe_media
+mode: default
+content:
+  field_oe_iframe_media_full_width:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_oe_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_oe_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,12 @@
+uuid: 59b8e268-ebf4-4bae-bf42-c5d9b61520ab
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-7aazaYDDy71iDLOqBgCv69TmxKOjqTcEf9JsMpA6oU'
+id: oe_iframe_media
+label: Iframe
+icon_uuid: null
+icon_default: null
+description: 'Shows Iframe media entities'
+behavior_plugins: {  }

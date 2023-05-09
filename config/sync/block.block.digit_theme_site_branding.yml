@@ -1,0 +1,25 @@
+uuid: 3489b764-cc89-4f8d-9222-f990a915a4de
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - digit_theme
+_core:
+  default_config_hash: srD-xdd3JdU8nrH08J0aENrUFBrCU-vuGT6BX9FLIpQ
+id: digit_theme_site_branding
+theme: digit_theme
+region: site_header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

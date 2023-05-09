@@ -1,0 +1,16 @@
+uuid: 8364980b-386d-4f2d-a2e7-9c86bcb98e70
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: 4Dt5tahDJBMMZISp8SxcMbvOEAUps6OBk4G0HrMa-GI
+id: lv
+label: Latvian
+direction: ltr
+weight: 12
+locked: false

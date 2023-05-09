@@ -1,0 +1,58 @@
+uuid: 7b84e339-db2e-411d-8839-b84a47d7bf37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_contextual_navigation.field_oe_limit
+    - field.field.paragraph.oe_contextual_navigation.field_oe_links
+    - field.field.paragraph.oe_contextual_navigation.field_oe_text
+    - field.field.paragraph.oe_contextual_navigation.field_oe_title
+    - paragraphs.paragraphs_type.oe_contextual_navigation
+  module:
+    - link
+_core:
+  default_config_hash: o8iExwKgOVwGXxoU02fSV8vJoIg8g5GAJJ2J_k_YmGs
+id: paragraph.oe_contextual_navigation.default
+targetEntityType: paragraph
+bundle: oe_contextual_navigation
+mode: default
+content:
+  field_oe_limit:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_oe_links:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_oe_text:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_oe_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

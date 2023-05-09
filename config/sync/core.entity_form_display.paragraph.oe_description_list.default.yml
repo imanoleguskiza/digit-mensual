@@ -1,0 +1,39 @@
+uuid: 89a516d1-d2ed-442e-86a3-dcef9a22b362
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_description_list.field_oe_description_list_items
+    - field.field.paragraph.oe_description_list.field_oe_title
+    - paragraphs.paragraphs_type.oe_description_list
+  module:
+    - description_list_field
+_core:
+  default_config_hash: WnDD8cNZ8wtba2ZkgXtN09POWbAJ_y9mnL_DAZRJ31Q
+id: paragraph.oe_description_list.default
+targetEntityType: paragraph
+bundle: oe_description_list
+mode: default
+content:
+  field_oe_description_list_items:
+    type: description_list_widget
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_oe_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

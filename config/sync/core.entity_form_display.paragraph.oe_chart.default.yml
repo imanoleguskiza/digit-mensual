@@ -1,0 +1,32 @@
+uuid: 200342e0-ad9c-43f5-b432-562cd98ad53a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_chart.field_oe_media
+    - paragraphs.paragraphs_type.oe_chart
+_core:
+  default_config_hash: 0tdTXORSaQ236ntn_5eKijwMgD268Sh2rSGUcm3ilNk
+id: paragraph.oe_chart.default
+targetEntityType: paragraph
+bundle: oe_chart
+mode: default
+content:
+  field_oe_media:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

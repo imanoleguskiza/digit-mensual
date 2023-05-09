@@ -1,0 +1,16 @@
+uuid: a6a06bd0-5dd6-4e57-978e-d81cc7ea7d29
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: A0LJVO91kThqGibylNHKQPrjXzHqAOZviGpGdMUxxIA
+id: es
+label: Spanish
+direction: ltr
+weight: 1
+locked: false

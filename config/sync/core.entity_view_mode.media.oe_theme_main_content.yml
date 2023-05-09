@@ -1,0 +1,12 @@
+uuid: 7cb555e1-f427-460c-898f-384590e5be1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: v1V7gYYnKoD-BkgEma_RVR5V5TN0jDNfjsrF6SUIUSQ
+id: media.oe_theme_main_content
+label: 'Main content'
+targetEntityType: media
+cache: true

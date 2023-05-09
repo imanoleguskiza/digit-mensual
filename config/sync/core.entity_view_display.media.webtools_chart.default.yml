@@ -1,0 +1,29 @@
+uuid: ab220901-e620-40a3-87ae-3df3ab1cf944
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.webtools_chart.oe_media_webtools
+    - media.type.webtools_chart
+  module:
+    - oe_webtools
+_core:
+  default_config_hash: NAgjCBzFimM9W0slBUZYkJyP55AaDuKSDOnkIiipUc4
+id: media.webtools_chart.default
+targetEntityType: media
+bundle: webtools_chart
+mode: default
+content:
+  oe_media_webtools:
+    type: webtools_snippet
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

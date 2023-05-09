@@ -1,0 +1,22 @@
+uuid: 154d2045-53e3-40d1-aa8d-43e76a3ca3ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_content_entity_contact
+    - paragraphs
+_core:
+  default_config_hash: E3lSfvgiokpGwYOLNtevZFFMkZTHx-0GwyOTUR1y99o
+id: paragraph.field_oe_contacts
+field_name: field_oe_contacts
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: oe_contact
+module: core
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

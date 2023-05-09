@@ -1,0 +1,22 @@
+uuid: 403cd606-9e98-48f8-95a8-9611b88fe3a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - digit_theme
+_core:
+  default_config_hash: '-d03U8iQFWFSM_KnLXP_dMC-9-QI5FJ-js-siIV0Zbw'
+id: digit_theme_main_page_content
+theme: digit_theme
+region: content
+weight: 2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

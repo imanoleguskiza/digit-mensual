@@ -1,0 +1,25 @@
+uuid: 47835f51-023a-40c2-a8c7-ad77c944ddf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - oe_theme_helper
+  theme:
+    - digit_theme
+_core:
+  default_config_hash: YSGdf6kGwdeHiYaiHS4ck_u-7aD4uzS3e5Z3e95KbyA
+id: digit_theme_main_navigation
+theme: digit_theme
+region: navigation
+weight: 0
+provider: null
+plugin: 'oe_theme_helper_site_navigation:main'
+settings:
+  id: 'oe_theme_helper_site_navigation:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: oe_theme_helper
+  level: 1
+visibility: {  }

@@ -1,0 +1,16 @@
+uuid: 65ffc8d5-2cb7-4662-96bb-293b5925ac23
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: gi3we5wY2XnWa3ZFT4PBNfLj0OQe7z33on0Ih29gTdk
+id: hu
+label: Hungarian
+direction: ltr
+weight: 14
+locked: false

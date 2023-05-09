@@ -1,0 +1,12 @@
+uuid: b93155b2-889e-499a-b540-9a385b589830
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Uxi2ATpdLKXG_HlJ4FTz87WjDhI53J9hyjSGNNmkirc
+id: oe_illustration_item_icon
+label: 'Illustration item with icon'
+icon_uuid: null
+icon_default: null
+description: 'Single illustration item with icon, to be used exclusively in conjunction with the "Illustration list with icons" paragraph type.'
+behavior_plugins: {  }

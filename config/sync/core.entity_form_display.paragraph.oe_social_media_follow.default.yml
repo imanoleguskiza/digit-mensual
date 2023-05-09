@@ -1,0 +1,58 @@
+uuid: a621e207-e730-4da1-a051-7cfa266590fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_social_media_follow.field_oe_social_media_links
+    - field.field.paragraph.oe_social_media_follow.field_oe_social_media_see_more
+    - field.field.paragraph.oe_social_media_follow.field_oe_social_media_variant
+    - field.field.paragraph.oe_social_media_follow.field_oe_title
+    - paragraphs.paragraphs_type.oe_social_media_follow
+  module:
+    - link
+    - typed_link
+_core:
+  default_config_hash: n5HKS2F4dcrReEaltKu5W34cyTuU-LEuXBZ3UPpHUQA
+id: paragraph.oe_social_media_follow.default
+targetEntityType: paragraph
+bundle: oe_social_media_follow
+mode: default
+content:
+  field_oe_social_media_links:
+    type: typed_link
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_oe_social_media_see_more:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_oe_social_media_variant:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_oe_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

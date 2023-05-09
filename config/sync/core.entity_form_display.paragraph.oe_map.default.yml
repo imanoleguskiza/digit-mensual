@@ -1,0 +1,32 @@
+uuid: a4fbd624-6e51-4733-95ee-1257f685d4a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_map.field_oe_media
+    - paragraphs.paragraphs_type.oe_map
+_core:
+  default_config_hash: 3wAOzdz5dFSYNTRmREevVLme9efSNybMkpOBDNslTXU
+id: paragraph.oe_map.default
+targetEntityType: paragraph
+bundle: oe_map
+mode: default
+content:
+  field_oe_media:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

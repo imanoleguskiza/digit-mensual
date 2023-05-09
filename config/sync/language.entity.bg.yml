@@ -1,0 +1,16 @@
+uuid: 4141f6bd-4761-4c44-998a-1be8d062db45
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: N8fLzGbpQ9smeY3aE6GOD6DJPFibtk4lquLz_aTDTFA
+id: bg
+label: Bulgarian
+direction: ltr
+weight: 0
+locked: false

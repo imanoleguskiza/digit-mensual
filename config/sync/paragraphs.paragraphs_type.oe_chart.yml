@@ -1,0 +1,12 @@
+uuid: b6200a3a-3e8e-4977-9669-1262dbdffd6b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JZldeA33zEN0PJblhA8vnIwDdTrprtJ-DknWFF_0shI
+id: oe_chart
+label: Chart
+icon_uuid: null
+icon_default: null
+description: 'Shows Webtools chart media entities'
+behavior_plugins: {  }

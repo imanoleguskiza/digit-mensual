@@ -1,0 +1,16 @@
+uuid: a6d07560-f68c-4f92-8ac3-53e0b9fc61e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: Qg9H-1ibo7EGm9BNq2Roslf8UD31JVhBAZIsLItPa20
+id: el
+label: Greek
+direction: ltr
+weight: 6
+locked: false

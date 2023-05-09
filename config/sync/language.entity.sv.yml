@@ -1,0 +1,16 @@
+uuid: 77097615-37ac-4f94-83e7-50fdde8f8e6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: N1IWwdVRl60Gjm-nm6rHsGjME8U1KiaN-tP4WzqxJG0
+id: sv
+label: Swedish
+direction: ltr
+weight: 23
+locked: false

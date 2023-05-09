@@ -1,0 +1,170 @@
+uuid: 4c6551cd-8ec9-4d28-b02c-d6a283aba097
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.oe_contact.oe_general.oe_address
+    - field.field.oe_contact.oe_general.oe_body
+    - field.field.oe_contact.oe_general.oe_email
+    - field.field.oe_contact.oe_general.oe_fax
+    - field.field.oe_contact.oe_general.oe_image
+    - field.field.oe_contact.oe_general.oe_link
+    - field.field.oe_contact.oe_general.oe_mobile
+    - field.field.oe_contact.oe_general.oe_office
+    - field.field.oe_contact.oe_general.oe_organisation
+    - field.field.oe_contact.oe_general.oe_phone
+    - field.field.oe_contact.oe_general.oe_press_contact_url
+    - field.field.oe_contact.oe_general.oe_social_media
+    - field.field.oe_contact.oe_general.oe_website
+    - oe_content_entity_contact.oe_contact_type.oe_general
+  module:
+    - address
+    - link
+    - oe_content_featured_media_field
+    - text
+    - typed_link
+_core:
+  default_config_hash: BsGPmjdTjdk2DK260b_B3GF4IkQw4DRB8UAhw3e7DEc
+id: oe_contact.oe_general.default
+targetEntityType: oe_contact
+bundle: oe_general
+mode: default
+content:
+  created:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  oe_address:
+    type: address_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  oe_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  oe_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  oe_fax:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  oe_image:
+    type: oe_featured_media_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  oe_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  oe_mobile:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  oe_office:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  oe_organisation:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  oe_phone:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  oe_press_contact_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  oe_social_media:
+    type: typed_link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  oe_website:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true
+  status: true

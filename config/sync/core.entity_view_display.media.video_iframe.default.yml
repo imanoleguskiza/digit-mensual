@@ -1,0 +1,35 @@
+uuid: ae48bc71-ee1e-4bae-91ea-f187d9dfe092
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video_iframe.oe_media_iframe
+    - field.field.media.video_iframe.oe_media_iframe_ratio
+    - field.field.media.video_iframe.oe_media_iframe_thumbnail
+    - field.field.media.video_iframe.oe_media_iframe_title
+    - media.type.video_iframe
+  module:
+    - oe_media_iframe
+_core:
+  default_config_hash: a7TXawTgJJaxQc-t6R8ZG7OB6IxwewBPa_9rH7TSuMk
+id: media.video_iframe.default
+targetEntityType: media
+bundle: video_iframe
+mode: default
+content:
+  oe_media_iframe:
+    type: oe_media_iframe
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  oe_media_iframe_ratio: true
+  oe_media_iframe_thumbnail: true
+  oe_media_iframe_title: true
+  thumbnail: true
+  uid: true

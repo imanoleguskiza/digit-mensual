@@ -1,0 +1,12 @@
+uuid: fc734fb6-8914-4218-996b-93ae976890d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: bw82Kk5_IIpwW56ARueCNPI436xk0H11guC8i_tTAI4
+id: paragraph.oe_banner_image
+label: 'Image banner'
+targetEntityType: paragraph
+cache: true

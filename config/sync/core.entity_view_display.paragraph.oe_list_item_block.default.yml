@@ -1,0 +1,58 @@
+uuid: 53446458-af58-4f29-a30b-7d34faee3502
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_list_item_block.field_oe_link
+    - field.field.paragraph.oe_list_item_block.field_oe_list_item_block_layout
+    - field.field.paragraph.oe_list_item_block.field_oe_paragraphs
+    - field.field.paragraph.oe_list_item_block.field_oe_title
+    - paragraphs.paragraphs_type.oe_list_item_block
+  module:
+    - entity_reference_revisions
+    - link
+    - options
+_core:
+  default_config_hash: 2wMpmqMe0yRxtuMyQylkgegKzsErjpSSgZU7aQ6jsgQ
+id: paragraph.oe_list_item_block.default
+targetEntityType: paragraph
+bundle: oe_list_item_block
+mode: default
+content:
+  field_oe_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_oe_list_item_block_layout:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_oe_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_oe_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

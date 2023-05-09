@@ -1,0 +1,24 @@
+uuid: 15f09d32-37af-48b0-8f67-55b42be1cafc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_social_feed.field_oe_media
+    - paragraphs.paragraphs_type.oe_social_feed
+_core:
+  default_config_hash: PVgWALh_G0W_Yv4yWfepFVJTdhGwOBGwacsxbN0LUQc
+id: paragraph.oe_social_feed.default
+targetEntityType: paragraph
+bundle: oe_social_feed
+mode: default
+content:
+  field_oe_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

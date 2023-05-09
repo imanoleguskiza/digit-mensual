@@ -1,0 +1,160 @@
+uuid: d61ccaf4-e5ac-4a1f-8868-a60a27ea5464
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.oe_contact.oe_general.oe_address
+    - field.field.oe_contact.oe_general.oe_body
+    - field.field.oe_contact.oe_general.oe_email
+    - field.field.oe_contact.oe_general.oe_fax
+    - field.field.oe_contact.oe_general.oe_image
+    - field.field.oe_contact.oe_general.oe_link
+    - field.field.oe_contact.oe_general.oe_mobile
+    - field.field.oe_contact.oe_general.oe_office
+    - field.field.oe_contact.oe_general.oe_organisation
+    - field.field.oe_contact.oe_general.oe_phone
+    - field.field.oe_contact.oe_general.oe_press_contact_url
+    - field.field.oe_contact.oe_general.oe_social_media
+    - field.field.oe_contact.oe_general.oe_website
+    - oe_content_entity_contact.oe_contact_type.oe_general
+  module:
+    - address
+    - link
+    - oe_content_featured_media_field
+    - text
+    - typed_link
+_core:
+  default_config_hash: FwWOlJiyNKy34LeITopCcbc32F4dqxr-EL-Vo232R2Q
+id: oe_contact.oe_general.default
+targetEntityType: oe_contact
+bundle: oe_general
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  oe_address:
+    type: address_default
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  oe_body:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  oe_email:
+    type: email_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  oe_fax:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  oe_image:
+    type: oe_featured_media_autocomplete
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  oe_link:
+    type: link_default
+    weight: 14
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  oe_mobile:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  oe_office:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  oe_organisation:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  oe_phone:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  oe_press_contact_url:
+    type: link_default
+    weight: 13
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  oe_social_media:
+    type: typed_link
+    weight: 11
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  oe_website:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

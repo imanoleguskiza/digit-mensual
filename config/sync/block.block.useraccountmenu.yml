@@ -1,0 +1,25 @@
+uuid: fc66e332-2ae3-48df-87ae-dba6983c28b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - digit_theme
+id: useraccountmenu
+theme: digit_theme
+region: site_header_secondary
+weight: -4
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

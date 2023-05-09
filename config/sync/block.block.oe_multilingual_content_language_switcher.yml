@@ -1,0 +1,22 @@
+uuid: 8d6a1667-ce17-4a64-9407-21e8ad59e1fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+  theme:
+    - olivero
+_core:
+  default_config_hash: xpXoeSFXyPYHQwctx0GXUNTsD8CznkfJ_N0q1WH1PJA
+id: oe_multilingual_content_language_switcher
+theme: olivero
+region: content
+weight: 1
+provider: null
+plugin: oe_multilingual_content_language_switcher
+settings:
+  id: oe_multilingual_content_language_switcher
+  label: 'OpenEuropa Content Language Switcher'
+  label_display: '0'
+  provider: oe_multilingual
+visibility: {  }

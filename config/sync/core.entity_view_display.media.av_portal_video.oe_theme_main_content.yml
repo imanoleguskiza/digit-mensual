@@ -1,0 +1,32 @@
+uuid: dcead5ba-9b52-406f-9394-869575fde370
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.oe_theme_main_content
+    - field.field.media.av_portal_video.oe_media_avportal_video
+    - media.type.av_portal_video
+  module:
+    - media_avportal
+_core:
+  default_config_hash: HUZ7hq1hGpTetHaSTBUfltWMOJiz0IvCbWcwfYbERmQ
+id: media.av_portal_video.oe_theme_main_content
+targetEntityType: media
+bundle: av_portal_video
+mode: oe_theme_main_content
+content:
+  oe_media_avportal_video:
+    type: avportal_video
+    label: hidden
+    settings:
+      max_width: 576
+      max_height: 400
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

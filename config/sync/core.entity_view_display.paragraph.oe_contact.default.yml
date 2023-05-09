@@ -1,0 +1,33 @@
+uuid: 203c6277-0efa-4e2f-9634-434eb3d414f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_contact.field_oe_contacts
+    - field.field.paragraph.oe_contact.field_oe_title
+    - paragraphs.paragraphs_type.oe_contact
+_core:
+  default_config_hash: nM-YzFQaRjb7BM3DySMAHGJ6GMoOfo3RxbqsPUVo2C8
+id: paragraph.oe_contact.default
+targetEntityType: paragraph
+bundle: oe_contact
+mode: default
+content:
+  field_oe_contacts:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_oe_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

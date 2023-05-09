@@ -1,0 +1,12 @@
+uuid: c1571705-d03b-4a51-9275-fae19e99933f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SFM-X7EJIqxXYw628FffovUEKFK2fK946-06tMNH950
+id: oe_gallery
+label: Gallery
+icon_uuid: null
+icon_default: null
+description: 'A collection of video and image medias.'
+behavior_plugins: {  }

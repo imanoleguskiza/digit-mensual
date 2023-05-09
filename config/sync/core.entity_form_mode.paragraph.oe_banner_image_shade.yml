@@ -1,0 +1,12 @@
+uuid: 425ac69e-b864-481f-8f81-63e898704cc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: ou-OSLDTIaszUOrLDuhi397fpQIXzCTFDuVwlCtCEdM
+id: paragraph.oe_banner_image_shade
+label: 'Image shade banner'
+targetEntityType: paragraph
+cache: true

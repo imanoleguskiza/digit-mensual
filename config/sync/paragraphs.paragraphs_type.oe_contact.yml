@@ -1,0 +1,12 @@
+uuid: ae39c33b-7f56-48c4-a5aa-f4edaf57d17a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: H8bea9ZtmwVXYvowM8un8Rky_wJPp6U_4c2kMBYmbNk
+id: oe_contact
+label: Contact
+icon_uuid: null
+icon_default: null
+description: 'Allows editors to reference Contact entities.'
+behavior_plugins: {  }

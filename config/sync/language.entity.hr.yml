@@ -1,0 +1,16 @@
+uuid: dce9a96d-205e-4640-82a4-d614ecce7b32
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: WRMu4OqBfP6bZlHxZm43w3T2t299VPiiyP2YABsT6Vg
+id: hr
+label: Croatian
+direction: ltr
+weight: 10
+locked: false

@@ -1,0 +1,16 @@
+uuid: 5300cdf6-5da9-4627-bba9-63f030656bf7
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_multilingual
+third_party_settings:
+  oe_multilingual:
+    category: eu
+_core:
+  default_config_hash: ZFSFOjo26zVLTp6C-RE7TAUdqnudk25APmf-3cAOcwY
+id: ro
+label: Romanian
+direction: ltr
+weight: 19
+locked: false

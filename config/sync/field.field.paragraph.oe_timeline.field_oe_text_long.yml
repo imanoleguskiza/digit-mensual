@@ -1,0 +1,26 @@
+uuid: 31dd19ab-446c-4f92-8395-e0dd295ed769
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_text_long
+    - paragraphs.paragraphs_type.oe_timeline
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats: {  }
+_core:
+  default_config_hash: hGNo93egNYMl872OYXkgnTNwrnsRWj-ynXb0sW2ClSY
+id: paragraph.oe_timeline.field_oe_text_long
+field_name: field_oe_text_long
+entity_type: paragraph
+bundle: oe_timeline
+label: Introduction
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

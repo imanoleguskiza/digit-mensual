@@ -1,0 +1,24 @@
+uuid: 0dde5ccd-0cce-4945-a287-fa445be6e050
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_theme_helper
+  theme:
+    - digit_theme
+_core:
+  default_config_hash: z_TX8X43Q1PvtS-_u-npjhLVLmh_0t3n9fmv3DOqKk8
+id: digit_theme_page_header
+theme: digit_theme
+region: page_header
+weight: 0
+provider: null
+plugin: oe_theme_helper_page_header
+settings:
+  id: oe_theme_helper_page_header
+  label: 'Page header'
+  label_display: '0'
+  provider: oe_theme_helper
+  context_mapping:
+    page_header: '@oe_theme_helper.page_header_context:page_header'
+visibility: {  }

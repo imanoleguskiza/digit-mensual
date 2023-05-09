@@ -1,0 +1,35 @@
+uuid: 6e39c533-fc8c-4444-9139-d16fb8b8ed27
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.oe_theme_main_content
+    - field.field.media.document.oe_media_file
+    - field.field.media.document.oe_media_file_type
+    - field.field.media.document.oe_media_remote_file
+    - media.type.document
+  module:
+    - file
+_core:
+  default_config_hash: GwQD6-vUpv39Vr-uVEWTP93akonwNYvio4IqWRFN34U
+id: media.document.oe_theme_main_content
+targetEntityType: media
+bundle: document
+mode: oe_theme_main_content
+content:
+  oe_media_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  oe_media_file_type: true
+  oe_media_remote_file: true
+  thumbnail: true
+  uid: true

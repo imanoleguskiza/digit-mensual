@@ -1,0 +1,70 @@
+uuid: 2e43b049-1191-4711-89a2-783ffd67e1f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.oe_illustration_vertical
+    - field.field.paragraph.oe_illustration_list_images.field_oe_illustration_alternate
+    - field.field.paragraph.oe_illustration_list_images.field_oe_illustration_columns
+    - field.field.paragraph.oe_illustration_list_images.field_oe_illustration_ratio
+    - field.field.paragraph.oe_illustration_list_images.field_oe_paragraphs
+    - field.field.paragraph.oe_illustration_list_images.field_oe_title
+    - paragraphs.paragraphs_type.oe_illustration_list_images
+  module:
+    - oe_paragraphs
+_core:
+  default_config_hash: Dit6QKvxUKngpG8Qnmze8bsVkeQV-Ywqpw_C0MyPSs8
+id: paragraph.oe_illustration_list_images.oe_illustration_vertical
+targetEntityType: paragraph
+bundle: oe_illustration_list_images
+mode: oe_illustration_vertical
+content:
+  field_oe_illustration_alternate:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_oe_illustration_ratio:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_oe_paragraphs:
+    type: oe_paragraphs_variants
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: oe_illustration_item_image
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_oe_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_oe_illustration_columns: true
+  status: true

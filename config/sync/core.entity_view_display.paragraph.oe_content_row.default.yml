@@ -1,0 +1,35 @@
+uuid: db2ffc22-258d-4573-a02d-62e55813f5cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_content_row.field_oe_paragraphs
+    - field.field.paragraph.oe_content_row.field_oe_title
+    - paragraphs.paragraphs_type.oe_content_row
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: zyI-J6SzdMJK-a8-PR0JYs5DIWbfKt3BEE7-FemYQwI
+id: paragraph.oe_content_row.default
+targetEntityType: paragraph
+bundle: oe_content_row
+mode: default
+content:
+  field_oe_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_oe_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

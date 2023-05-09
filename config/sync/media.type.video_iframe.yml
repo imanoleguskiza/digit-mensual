@@ -1,0 +1,18 @@
+uuid: 930c4c4c-5c46-4731-bd7b-5511003ee95a
+langcode: en
+status: true
+dependencies:
+  module:
+    - oe_media_iframe
+_core:
+  default_config_hash: kPMDJbI524KyhPSQzXX3KgZNo1Ix5AWJOcuLpZTWBYY
+id: video_iframe
+label: 'Video iframe'
+description: 'Media type that uses iframes as source for videos.'
+source: oe_media_iframe
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  text_format: oe_media_iframe
+  source_field: oe_media_iframe
+field_map: {  }

@@ -1,0 +1,42 @@
+uuid: 9b65eb62-f31c-46a4-b676-a99616849ac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_accordion_item.field_oe_icon
+    - field.field.paragraph.oe_accordion_item.field_oe_text
+    - field.field.paragraph.oe_accordion_item.field_oe_text_long
+    - paragraphs.paragraphs_type.oe_accordion_item
+  module:
+    - options
+    - text
+_core:
+  default_config_hash: xsba977ZDhnJqbRqUoT1DCPumFJdB-ZjBUXcVE6Xo_c
+id: paragraph.oe_accordion_item.default
+targetEntityType: paragraph
+bundle: oe_accordion_item
+mode: default
+content:
+  field_oe_icon:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_oe_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_oe_text_long:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }
