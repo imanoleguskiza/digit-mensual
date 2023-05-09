@@ -1,0 +1,69 @@
+{#
+/**
+ * @file
+ * Theme override for the Drupal account menu.
+ *
+ * @see ./core/themes/stable/templates/navigation/menu.html.twig
+ */
+#}
+<div class="ecl-site-header-{{ ecl_branding }}__login-container">
+  {% if logged_in %}
+    <a
+      class="ecl-button ecl-button--ghost ecl-site-header-{{ ecl_branding }}__login-toggle"
+      href="{{ login_toggle.href_logged }}"
+      aria-controls="{{ login_box.id }}"
+      data-ecl-login-toggle
+      aria-expanded="false"
+    >
+      {% include '@ecl/icon/icon.html.twig' with {
+        icon: {
+          path: ecl_icon_path,
+          name: 'logged-in',
+          size: 's'
+        },
+        extra_classes: 'ecl-site-header-core__icon',
+      } only %}
+      {{- login_toggle.label_logged|render -}}
+      {% include '@ecl/icon/icon.html.twig' with {
+        icon: {
+          path: ecl_icon_path,
+          name: 'corner-arrow',
+          size: 'xs'
+        },
+        extra_classes: 'ecl-site-header-%branding%__login-arrow'|replace({'%branding%': ecl_branding}),
+      } only %}
+    </a>
+    <div
+      id="{{ login_box.id }}"
+      class="ecl-site-header__login-box"
+      data-ecl-login-box
+    >
+      <p class="ecl-site-header-{{ ecl_branding }}__login-description">
+        {{- login_box.description -}}
+      </p>
+      <hr class="ecl-site-header-{{ ecl_branding }}__login-separator">
+      {% include '@ecl/link/link.html.twig' with {
+        link: {
+          label: login_box.label|render,
+          path: login_box.href,
+          type: "standalone",
+        }
+      } only %}
+    </div>
+  {% else %}
+    <a
+      class="ecl-button ecl-button--ghost ecl-site-header-{{ ecl_branding }}__login-toggle"
+      href="{{ login_toggle.href_not_logged }}"
+    >
+      {% include '@ecl/icon/icon.html.twig' with {
+        icon: {
+          path: ecl_icon_path,
+          name: 'log-in',
+          size: 's'
+        },
+        extra_classes: 'ecl-site-header-%branding%__icon'|replace({'%branding%': ecl_branding}),
+      } only %}
+      {{- login_toggle.label_not_logged |render -}}
+    </a>
+  {% endif %}
+</div>

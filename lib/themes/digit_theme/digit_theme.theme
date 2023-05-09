@@ -1,0 +1,142 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in Eures extranet.
+ */
+
+declare(strict_types = 1);
+
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\oe_theme\ValueObject\FileValueObject;
+
+/**
+ * Implements hook_preprocess_HOOK() for the user account menu.
+ */
+function digit_theme_preprocess_menu__account(&$variables) {
+  $link = array_pop($variables['items']);
+  if (empty($link)) {
+    return;
+  }
+  $user = $variables['user'];
+  $metadata = CacheableMetadata::createFromObject($user);
+  $metadata->applyTo($variables);
+  if ($variables['logged_in']) {
+    $variables['login_toggle'] = [
+      'label_logged' => $link['title'] ?? "",
+      'href_logged' => $link['url'] ?? "",
+    ];
+    $variables['login_box'] = [
+      'id' => Html::getUniqueId('login_box'),
+      'description' => isset($variables['user']) ? t('Logged in as @username', ['@username' => $variables['user']->getDisplayName()]) : t('Logged in.'),
+      'label' => $link['title'] ?? "",
+      'href' => $link['url'] ?? "",
+    ];
+  }
+  else {
+    $variables['login_toggle'] = [
+      'label_not_logged' => $link['title'] ?? "",
+      'href_not_logged' => $link['url'] ?? "",
+    ];
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for the comment links.
+ */
+function eures_theme_preprocess_links__comment(&$variables) {
+  $icon_mapping = [
+    'comment-delete' => 'close',
+    'comment-edit' => 'edit',
+    'comment-reply' => 'feedback',
+    'comment-permalink' => 'copy',
+  ];
+  foreach ($variables['links'] as $link_id => &$link) {
+    $link['icon'] = $icon_mapping[$link_id] ?? "";
+    $link['url'] = $link['link']['#url'] ?? "";
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for the comments.
+ */
+function eures_theme_preprocess_comment(&$variables) {
+  // Use the creation date to flag comments as new.
+  $variables['new_indicator_timestamp'] = $variables['comment']->getCreatedTime();
+  // Use custom submitted message.
+  $variables['submitted'] = t('@username added a comment - @datetime', [
+    '@username' => $variables['author'],
+    '@datetime' => $variables['created'],
+  ]);
+}
+
+/**
+ * Implements hook_preprocess_forum_list().
+ */
+function eures_theme_preprocess_forum_list(&$variables) {
+  // Sanitize each forum so that the template can safely print the data.
+  foreach ($variables['forums'] as $id => $forum) {
+    $variables['forums'][$id]->notify_me = [
+      '#lazy_builder' => [
+        'flag.link_builder:build',
+        [
+          'taxonomy_term',
+          $id,
+          'notify_me_forum_container',
+        ],
+      ],
+      '#create_placeholder' => TRUE,
+    ];
+  }
+}
+
+/**
+ * Implements hook_preprocess_table__forum_topic_list().
+ */
+function eures_theme_preprocess_forums(&$variables) {
+  $variables['topics']['#header'][]['data'] = t('Actions');
+  $row = 0;
+  foreach ($variables['topics_original'] as $topic) {
+    $variables['topics']['#rows'][$row][] = [
+      'data' => [
+        [
+          '#lazy_builder' => [
+            'flag.link_builder:build',
+            [
+              'node',
+              $topic->id(),
+              'notify_me',
+            ],
+          ],
+          '#create_placeholder' => TRUE,
+        ],
+      ],
+      'class' => 'forum__actions',
+      'attributes' => [
+        'data-ecl-table-header' => 'Actions',
+      ],
+    ];
+    $row++;
+  }
+}
+
+/**
+ * Implements hook_preprocess_media().
+ */
+function eures_theme_preprocess_media__eures_file(&$variables) {
+  $media = $variables['media'];
+  $file_entity = $media->get('field_media_file')->entity;
+  $variables['file'] = FileValueObject::fromFileEntity($file_entity)
+    ->setTitle($media->getName())
+    ->setLanguageCode($media->language()->getId());
+}
+
+/**
+ * Implements hook_preprocess_menu_local_action().
+ */
+function eures_theme_preprocess_menu_local_action(array &$variables) {
+  if ($variables['link']['#title']->getArguments('title')['@node_type'] == 'Forum topic') {
+    $variables['link']['#title'] = t("Add new Conversation");
+  }
+}
